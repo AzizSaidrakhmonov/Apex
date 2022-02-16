@@ -1,0 +1,2456 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    to bottom right,
+    #ecfefa,
+    #bee9ff,
+    #dbeaff,
+    #f3dbff
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+
+.up a {
+  position: fixed;
+  color: #fff;
+  background-color: #00445b;
+  padding: 8px 20px;
+  font-size: 24px;
+  border-radius: 50%;
+  text-decoration: none;
+  top: 550px;
+  right: 10px;
+  z-index: 9999999;
+
+}
+
+.up a:hover {
+  color: #fff;
+}
+
+/* .slick-slide {
+  margin-top: 50px;
+} */
+
+/* Modals */
+
+.subject-info__modal-wrapper {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  justify-content: center;
+  position: fixed;
+  z-index: 9;
+  transition: all 0.5s ease-in-out;
+}
+
+.subject-info__modal-wrapper.active {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s ease-in-out;
+}
+
+.subject-info__modal {
+  padding: 50px;
+  width: 900px;
+}
+
+.subject-info__modal-header {
+  height: 40px;
+  background: #00445b;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.subject-info__modal-header p {
+  text-align: right;
+  margin: 10px 20px 15px 0;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.subject-info__modal-body {
+  display: flex;
+  justify-content: space-between;
+  background: #ecfefa;
+}
+
+.subject-info__modal-subtitle h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin-left: 26px;
+  margin-bottom: 10px;
+}
+
+.subject-info__modal-date h4 {
+  margin-left: 26px;
+  color: #646464;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+}
+
+.subject-info__modal-text p {
+  margin: 30px 0 10px 26px;
+  text-align: justify;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 37px;
+  padding-right: 13px;
+}
+
+.subject-info__modal-title h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 10px;
+}
+
+.subject-info__modal-info p {
+  padding: 10px;
+  text-align: justify;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 37px;
+  margin-right: 26px;
+  margin-bottom: 26px;
+  letter-spacing: 0.5px;
+}
+
+.register-course__modal-wrapper {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  justify-content: center;
+  position: fixed;
+  z-index: 9;
+  transition: all 0.5s ease-in-out;
+}
+
+.register-course__modal {
+  padding: 50px;
+}
+
+.register-course__modal-wrapper.active {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s ease-in-out;
+}
+
+.register-course__modal-header {
+  background: #00445b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.register-course__modal-header-brand img {
+  padding: 20px;
+}
+
+.register-course__modal-header-title h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #fff;
+}
+
+.register-course__modal-header-close {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.register-course__modal-header-close:hover {
+  cursor: pointer;
+}
+
+.register-course__modal-body,
+.accepted-info__modal-body {
+  background: #ecfefa;
+}
+
+.register-course__modal-body-title h3 {
+  padding: 50px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 43px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 52px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.register-course__modal-body-form input {
+  margin: 40px 100px 0;
+  width: 457px;
+  height: 65px;
+  border-radius: 0;
+}
+
+.valid-feedback,
+.invalid-feedback {
+  margin: 0 100px;
+}
+
+.register-course__modal-btn {
+  margin: 80px 101px 50px;
+  padding: 23px 160px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #fff;
+  background: #00445b;
+  border: none;
+}
+
+.register-course__modal-btn:hover,
+.accepted-info__modal-btn:hover {
+  background: #ecfefa;
+  color: #000;
+  border: 1px solid #000;
+  transition: 0.4s;
+}
+
+.accepted-info__modal-wrapper {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  justify-content: center;
+  position: fixed;
+  z-index: 9;
+  transition: all 0.5s ease-in-out;
+}
+
+.accepted-info__modal-wrapper.active {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s ease-in-out;
+}
+
+.accepted-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+}
+
+.accepted-info__modal-header {
+  background: #00445b;
+  height: 20px;
+}
+
+.accepted-info__modal-text p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  padding: 50px 100px;
+}
+
+.accepted-info__modal-btn {
+  margin: 0 235px 50px;
+  padding: 23px 48px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #fff;
+  background: #00445b;
+  border: none;
+}
+
+/* Header Section */
+.header {
+  padding-top: 30px;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-section__brand {
+  display: flex;
+  align-items: center;
+}
+
+.header-section__brand h2 {
+  margin-left: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.header-section__nav-items {
+  display: flex;
+}
+
+.header-section__nav-items a {
+  text-decoration: none;
+}
+
+.header-section__nav-item {
+  margin-left: 30px;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #000;
+}
+
+.header-section__nav-item:hover {
+  color: #00445b;
+  cursor: pointer;
+}
+
+/* Main Section */
+
+.main-section__title h1 {
+  margin-top: 114px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 53px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.main-section__subtitle p {
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  width: 444px;
+}
+
+.main-section__btn button,
+.courses-section__card-btn button,
+.courses-section__card-btn-2 button {
+  margin-top: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  padding: 25px 48px;
+  background: #00445b;
+  color: #fff;
+  border: none;
+}
+
+.main-section__btn button:hover,
+.courses-section__card-btn button:hover,
+.courses-section__card-btn-2 button:hover {
+  background: #ecfefa;
+  border: 1px solid #000;
+  color: #000;
+  transition: 0.5s;
+}
+
+.item-2 {
+  position: relative;
+}
+
+.item-2 .main-section__item-blur {
+  position: absolute;
+  width: 284px;
+  height: 135px;
+  top: 513px;
+  right: 80px;
+  background: #cdecff;
+  filter: blur(20px);
+}
+
+.main-section__item {
+  position: relative;
+}
+
+/* News Section */
+
+.news {
+  margin-top: 73px;
+}
+
+.news-section__title h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #00445b;
+}
+
+.news-section__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news-section__item,
+.courses-section__item {
+  position: relative;
+  margin: 0 15.5px 30px;
+}
+
+.news-section__item-overlay p {
+  position: absolute;
+  top: 70px;
+  left: 90px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  color: #000;
+  letter-spacing: 5px;
+}
+
+.news-section__img img {
+  width: 400px;
+  margin-top: 30px;
+  margin-left: -13px;
+}
+
+.news-section__item-overlay {
+  visibility: hidden;
+  position: absolute;
+  top: 39px;
+  width: 372px;
+  height: 180px;
+  background: rgba(202, 199, 199, 0.616);
+}
+
+.news-section__item-wrapper:hover .news-section__item-overlay,
+.courses-section__item-wrapper:hover .courses-section__item-overlay {
+  visibility: visible;
+  cursor: pointer;
+}
+
+.news-section__subtitle h4 {
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.news-section__date p {
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #646464;
+}
+
+/* Courses Section */
+
+.courses {
+  margin-top: 151px;
+}
+
+.courses-section__title h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #00445b;
+}
+
+.courses-section__items {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.courses-section__item {
+  width: 340px;
+  height: 393px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.13);
+  margin: 0 15.5px 30px;
+}
+
+.courses-section__item-wrapper > img {
+  width: 400px;
+}
+
+.courses-section__item-overlay p {
+  position: absolute;
+  top: 78px;
+  left: 98px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  color: #000;
+  letter-spacing: 5px;
+}
+
+.courses-section__item-overlay {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  width: 401px;
+  height: 194px;
+  background: rgba(202, 199, 199, 0.616);
+}
+
+.courses-section__card-body {
+  background: #ecfefa;
+}
+
+.courses-section__btn button {
+  margin: 30px 16px 21px 21px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  padding: 16px 110px;
+  background: #00445b;
+  color: #fff;
+  border: none;
+}
+
+.courses-section__btn button:hover {
+  background: #ecfefa;
+  border: 1px solid #000;
+  color: #000;
+  transition: 0.5s;
+}
+
+.courses-section__title h5 {
+  margin: 21px 0 0 21px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.courses-section__text p {
+  margin: 10px 0 0 21px;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.courses-section__more-modal-body {
+  background: #bee9ff;
+}
+
+.courses-section__modal-body-item {
+  display: flex;
+}
+
+.courses-section__info h4,
+.courses-section__info p {
+  margin: 20px;
+}
+
+.courses-section__modal-description h3,
+.courses-section__modal-description p {
+  margin-top: 20px;
+}
+
+.courses-section__info h4,
+.courses-section__modal-description h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.courses-section__info p,
+.courses-section__modal-description p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: justify;
+}
+
+/* Tutors Section */
+
+.tutors {
+  margin-top: 151px;
+}
+
+.tutors-section__title h2,
+.annotation-section__title h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #00445b;
+}
+
+.tutors-section__items,
+.annotation-section__items {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tutors-section__item,
+.annotation-section__item {
+  margin-right: 31px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.13);
+  margin: 0 15.5px 30px;
+}
+
+.tutors-section__item-img img,
+.annotation-section__item-img img {
+  width: 401px;
+}
+
+.tutors-section__card-body,
+.annotation-section__card-body {
+  background: #ecfefa;
+  padding-bottom: 1px;
+}
+
+.tutors-section__item-title h5,
+.annotation-section__item-title h5 {
+  padding: 37px 0 0 37px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.tutors-section__item-text p {
+  padding: 20px 0 37px 37px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+/* Photos Section */
+
+.photos {
+  margin-top: 151px;
+}
+
+.photos-section__title h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #00445b;
+}
+
+.photos-section__items {
+  margin-top: 30px;
+  margin-left: -13px;
+}
+
+.photos-section__item-img img {
+  width: 432px;
+  cursor: pointer;
+}
+
+.photos-section__item-img img:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 0.5s;
+}
+
+/* Videos Section */
+
+.videos {
+  margin-top: 150px;
+}
+
+.videos-section__title h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #00445b;
+}
+
+.videos-section__items {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.videos-section__item iframe {
+  width: 400px;
+  height: 247px;
+  margin: 0 15.5px 30px;
+}
+
+/* Results Section */
+
+.results {
+  margin-top: 150px;
+  position: relative;
+}
+
+.results-section__title h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #00445b;
+}
+
+.results-section__items {
+  margin-top: 79px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.results-section__item {
+  position: relative;
+  background: #ecfefa;
+  padding: 35px;
+  margin: 60px 15.5px 30px;
+}
+
+.results-section__item-img img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.results-section__item-info h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.results-section__item-info p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+/* Annotation Section */
+
+.annotation {
+  margin-top: 68px;
+}
+
+.annotation-section__item-subtitle p {
+  margin: 10px 0 0 37px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #646464;
+}
+
+.annotation-section__item-text p {
+  margin: 20px 0 0 37px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.annotation-section__item-rate {
+  padding: 20px 0 22px 37px;
+}
+
+.annotation-section__item-rate i {
+  color: #fdb44b;
+}
+
+/* Our Section */
+
+.our {
+  margin: 150px 0;
+}
+
+.our-section__title h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #00445b;
+}
+
+.our-section__map iframe {
+  margin-top: 30px;
+}
+
+.our-section__items {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.our-section__item {
+  display: flex;
+  align-items: center;
+}
+
+.our-section__item p {
+  margin-left: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.our-section__item i {
+  margin-top: -15px;
+}
+
+.our-section__item-socials {
+  margin-top: -15px;
+}
+
+.our-section__item-socials i {
+  margin-left: 14px;
+  cursor: pointer;
+}
+
+/* Contact Section */
+
+.contact {
+  background: #bee9ff;
+}
+
+.contact-section__title h2 {
+  padding-top: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #00445b;
+}
+
+.contact-section__form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.contact-section__form input {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  padding: 15px;
+  color: rgba(100, 100, 100, 0.5);
+  border: 0.5px solid #646464;
+  width: 333px;
+  height: 49px;
+  border-radius: 0;
+}
+
+.contact-section__form button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  background: #00445b;
+  color: #fff;
+  padding: 15px 45px;
+  border-radius: 0;
+}
+
+.contact-section__form button:hover {
+  background: #ecfefa;
+  border: 1px solid #000;
+  transition: 0.5s;
+}
+
+.contact-section__form:after {
+  content: "";
+  width: 300px;
+  height: 1px;
+  position: absolute;
+  top: 100px;
+  left: 470px;
+  background: #000;
+}
+
+.contact-section__feedback {
+  margin: 0;
+}
+
+/* Footer Section */
+
+.footer {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  background: #bee9ff;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.footer-section__item-1 {
+  display: flex;
+  align-items: center;
+}
+
+.footer-section__title {
+  margin-left: 20px;
+}
+
+.footer-section__title h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.footer-section__title p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.footer-section__item-2 {
+  margin-left: 100px;
+  margin-top: 60px;
+}
+
+.footer-section__item-2 p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1281px){
+
+  .news-section__img img, .photos-section__item-img img {
+    width: 356px;
+  }
+
+  .news-section__item-overlay {
+    width: 330px;
+    height: 160px;
+  }
+
+  .courses-section__item-wrapper img,.tutors-section__item-img img,.annotation-section__item-img img,.videos-section__item iframe {
+    width: 340px;
+  }
+
+  .courses-section__item-overlay {
+    width: 340px;
+    height: 166px;
+  }
+
+  .courses-section__btn button {
+    padding: 16px 78px;
+  }
+
+  .news-section__item-overlay p ,.courses-section__item-overlay p{
+    top: 65px;
+    left: 70px;
+    font-size: 27px;
+  }
+
+  .contact-section__form input {
+    width: 300px;
+  }
+
+}
+
+@media only screen and (max-width: 1024px){
+  .news-section__img img,.photos-section__item-img img {
+    width: 320px;
+  }
+
+  .news-section__item-overlay {
+    width: 295px;
+    height: 144px;
+  }
+
+  .news-section__item-overlay p ,.courses-section__item-overlay p{
+    top: 55px;
+    left: 65px;
+  }
+
+  .courses-section__item-wrapper img,.tutors-section__item-img img,.annotation-section__item-img img,.videos-section__item iframe {
+    width: 280px;
+  }
+
+  .courses-section__item-overlay {
+    width: 280px;
+    height: 136px;
+  }
+
+  .courses-section__btn button {
+    padding: 16px 52px;
+    margin: 30px 0 21px 21px;
+  }
+
+  .contact-section__form input {
+    margin: 0 10px;
+    width: 240px;
+  }
+
+  .contact-section__form:after {
+    left: 340px;
+  }
+
+  .contact-section__feedback {
+    margin-left: 10px;
+  }
+
+  .footer-section {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-section__item-2 {
+    margin: 60px 0;
+  }
+
+
+}
+
+@media only screen and (max-width: 913px){
+  .hamburger-menu {
+    display: block;
+  }
+
+  /* Subject Info Modal */
+  .subject-info__modal {
+    width: 912px;
+  }
+  /* Header Section */
+
+  .header-section__nav-items {
+    display: none;
+  }
+
+  .header-section__brand h2 {
+    font-size: 30px;
+  }
+
+  /* Main Section */
+
+  .main-section__item-blur {
+    display: none;
+  }
+
+  .main-section__item > img {
+    display: none;
+  }
+
+  .main-section__title h1 {
+    text-align: center;
+    font-size: 54px;
+    line-height: 57px;
+    margin-bottom: 50px;
+  }
+
+  .main-section__subtitle p {
+    margin: 20px;
+    text-align: center;
+    width: 658px;
+    font-size: 24px;
+    line-height: 37px;
+  }
+
+  .main-section__btn {
+    text-align: center;
+  }
+
+  .main-section__btn button {
+    font-size: 18px;
+    padding: 25px 48px;
+  }
+
+  /* News Section */
+
+  .news-section__items {
+    margin-top: -25px;
+  }
+
+  .news-section__title h2,
+  .courses-section__title h2,
+  .tutors-section__title h2,
+  .photos-section__title h2,
+  .videos-section__title h2,
+  .results-section__title h2,
+  .annotation-section__title h2,
+  .our-section__title h2,
+  .contact-section__title h2 {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
+  .news-section__img img {
+    width: 340px;
+  }
+
+  .news-section__item-overlay {
+    width: 315px;
+    height: 154px;
+    top: 38px;
+    left: 0px;
+  }
+
+  .news-section__item-overlay p {
+    top: 65px;
+    left: 82px;
+    font-size: 20px;
+  }
+
+  /* Courses Section */
+
+  .courses-section__items,
+  .tutors-section__items,
+  .photos-section__items,
+  .results-section__items {
+    margin-top: 15px;
+  }
+
+  .courses-section__item-wrapper > img {
+    width: 316px;
+  }
+
+  .courses-section__item-overlay {
+    width: 316px;
+    height: 153px;
+  }
+
+  .courses-section__btn button {
+    padding: 16px 68px;
+  }
+
+  /* Tutors Section */
+
+  .tutors-section__item-img img {
+    width: 316px;
+  }
+
+  /* Photos Section */
+
+  .photos-section__item-img img {
+    width: 250px;
+  }
+
+  /* Videos Section */
+
+  .videos-section__item iframe {
+    width: 320px;
+  }
+
+  /* Annotation Section */
+
+  .annotation-section__item-img img {
+    width: 316px;
+  }
+
+  /* Our Section */
+
+  .our-section__item {
+    justify-content: space-evenly;
+  }
+
+  .our-section__item-socials i {
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+
+  .our-section__item-socials {
+    margin-left: 14px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Contact Section */
+
+  .contact-section__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .contact-section__form > div {
+    margin-top: 20px;
+  }
+
+  .contact-section__form input {
+    width: 696px;
+  }
+
+  .contact-section__form:after {
+    top: 400px;
+    left: 0;
+    width: 696px;
+  }
+
+  .contact-section__form-btn {
+    text-align: center;
+  }
+
+  .contact-section__feedback {
+    margin: 10px;
+  }
+
+  /* Footer Section */
+
+  .footer-section {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-section__item-1 {
+    flex-direction: column;
+  }
+
+  .footer-section__item-2 {
+    margin: 0;
+  }
+
+  .footer-section__title {
+    margin: 20px 0 0 0;
+  }
+
+  .footer-section__title h3 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+
+  /* Subject Info Modal */
+  .subject-info__modal {
+    width: 768px;
+  }
+  
+}
+
+@media only screen and (max-width: 541px) {
+  .register-course__modal {
+    width: 580px;
+  }
+
+  .register-course__modal-header {
+    justify-content: center;
+  }
+
+  .register-course__modal-header-brand img {
+    width: 100px;
+  }
+
+  .register-course__modal-header-title h2 {
+    font-size: 18px;
+    margin-left: -10px;
+  }
+
+  .register-course__modal-header-close {
+    top: -5px;
+    right: 5px;
+    font-size: 23px;
+  }
+
+  .register-course__modal-body-title h3 {
+    /* font-size: 30px; */
+    font-size: 37px;
+    padding: 20px 0;
+  }
+
+  .register-course__modal-body-form input {
+    margin: 15px 20px 0;
+    width: 440px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .register-course__modal-btn {
+    margin: 30px 20px 50px;
+    padding: 22px 166px;
+    font-size: 11px;
+  }
+
+  .register-course__feedback {
+    margin-left: 20px;
+    font-size: 10px;
+  }
+
+  /* Accepted Info Modal */
+
+  .accepted-info__modal {
+    width: 440px;
+  }
+
+  .accepted-info__modal-body p {
+    padding: 40px 20px 20px;
+    font-size: 16px;
+  }
+
+  .accepted-info__modal-btn {
+    margin: 0 163px 30px;
+    padding: 12px 35px;
+    font-size: 11px;
+  }
+
+  .subject-info__modal {
+    width: 539px;
+  }
+
+  .subject-info__modal-body {
+    flex-direction: column;
+  }
+
+  .subject-info__modal-img img {
+    width: 439px;
+  }
+
+  .subject-info__modal-header p {
+    margin: 0px 5px 3px 0;
+    font-size: 23px;
+  }
+
+  .subject-info__modal-subtitle h3 {
+    font-size: 16px;
+  }
+
+  .subject-info__modal-text p {
+    margin: 20px 10px 10px 26px;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 30px;
+    padding-right: 13px;
+  }
+
+  .subject-info__modal-title h4 {
+    font-size: 20px;
+    margin: 10px 0 0 26px;
+  }
+
+  .subject-info__modal-info p {
+    padding: 10px;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    margin-left: 16px;
+  }
+
+  /* Header Section */
+
+  .header-section__brand img {
+    width: 90px;
+  }
+
+  .header-section__brand h2 {
+    font-size: 22px;
+  }
+
+  /* Main Section */
+
+  .main-section__subtitle p {
+    /* text-align: center; */
+    width: 472px;
+    font-size: 20px;
+  }
+
+  /* News Section */
+
+ 
+
+  .news-section__title h2,
+  .courses-section__title h2,
+  .tutors-section__title h2,
+  .photos-section__title h2,
+  .videos-section__title h2,
+  .results-section__title h2,
+  .annotation-section__title h2,
+  .our-section__title h2,
+  .contact-section__title h2 {
+    font-size: 26px;
+  }
+
+  .news-section__img img {
+    width: 514px;
+  }
+
+  .news-section__item-overlay {
+    width: 476px;
+    height: 229px;
+    top: 43px;
+    left: 6px;
+  }
+
+  .news-section__item-overlay p {
+    top: 90px;
+    left: 135px;
+    font-size: 30px;
+  }
+
+  /* Courses Section */
+
+  .courses-section__item-wrapper > img,
+  .tutors-section__item-img img,
+  .annotation-section__item-img img {
+    width: 484px;
+  }
+
+
+
+  .courses-section__item-overlay {
+    width: 484px;
+    height: 234px;
+  }
+
+  .courses-section__item-overlay p {
+    top: 90px;
+    left: 135px;
+    font-size: 30px;
+  }
+
+  .courses-section__btn button {
+    font-size: 12px;
+    padding: 18px 155px;
+  }
+
+  /* Photos Section */
+
+  .photos-section__item-img img {
+    width: 540px;
+  }
+
+  /* Videos Section */
+
+  .videos-section__item iframe {
+    width: 480px;
+  }
+
+  /* Our Section */
+
+  .our-section__map iframe {
+    height: 200px;
+  }
+
+  .our-section__items {
+    display: block;
+  }
+
+  .our-section__item {
+    justify-content: start;
+  }
+
+  /* Contact Section */
+
+  .contact-section__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .contact-section__form > div {
+    margin-top: 20px;
+  }
+
+  .contact-section__form input {
+    width: 500px;
+  }
+
+  .contact-section__form-btn {
+    text-align: center;
+  }
+
+  .contact-section__form-btn button {
+    margin-top: 20px;
+  }
+
+  .contact-section__form:after {
+    top: 450px;
+    left: 0;
+    width: 515px;
+  }
+
+  .footer-section__item-1 {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 470px){
+  .main-section__subtitle p {
+    width: 404px;
+  }
+
+  .news-section__img img {
+    width: 428px;
+  }
+
+  .news-section__item-overlay {
+    width: 398px;
+    height: 192px;
+    top: 40px;
+    left: 2px;
+  }
+
+  .news-section__item-overlay p {
+    top: 70px;
+    left: 90px;
+  }
+
+  .courses-section__item-wrapper > img,
+  .tutors-section__item-img img,
+  .annotation-section__item-img img {
+    width: 414px;
+  }
+
+  .courses-section__btn button {
+    padding: 18px   124px;
+  }
+
+  .photos-section__item-img img {
+    width: 470px;
+  }
+
+  .videos-section__item iframe {
+    width: 414px;
+  }
+
+  .contact-section__form input {
+    width: 424px;
+  }
+
+  .contact-section__form:after {
+    width: 444px;
+  }
+
+}
+
+@media only screen and (max-width: 440px) {
+
+  .register-course__modal {
+    width: 470px;
+  }
+  
+  .register-course__modal-body-form input {
+    margin: 15px 20px 0;
+    width: 326px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .register-course__modal-btn {
+    margin: 30px 20px 50px;
+    padding: 22px 108px;
+    font-size: 11px;
+  }
+
+
+  /* Accepted Info Modal */
+
+  .accepted-info__modal {
+    width: 360px;
+  }
+
+  .accepted-info__modal-btn {
+    margin: 0 124px 30px;
+    padding: 12px 35px;
+    font-size: 11px;
+  }
+
+  .subject-info__modal {
+    width: 460px;
+  }
+
+  .subject-info__modal-body {
+    flex-direction: column;
+  }
+
+  .subject-info__modal-img img {
+    width: 360px;
+  }
+
+  .main-section__subtitle p {
+    width: 390px;
+  }
+
+  .news-section__img img {
+    width: 408px;
+  }
+
+  .news-section__item-overlay {
+    width: 378px;
+    height: 182px;
+    top: 40px;
+    left: 2px;
+  }
+
+  .news-section__item-overlay p {
+    top: 70px;
+    left: 90px;
+  }
+
+  .courses-section__item-wrapper > img,
+  .tutors-section__item-img img,
+  .annotation-section__item-img img {
+    width: 384px;
+  }
+
+  .courses-section__item-overlay {
+    width: 384px;
+    height: 185px;
+  }
+
+  .courses-section__item-overlay p {
+    top: 65px;
+    left: 90px;
+    }
+
+  .courses-section__btn button {
+    padding: 18px 108px;
+  }
+
+  .photos-section__item-img img {
+    width: 440px;
+  }
+
+  .videos-section__item iframe {
+    width: 390px;
+  }
+
+  .contact-section__form input {
+    width: 396px;
+  }
+
+  .contact-section__form:after {
+    width: 408px;
+  }
+
+}
+
+@media only screen and (max-width: 415px) {
+  .register-course__modal {
+    width: 460px;
+  }
+
+  .register-course__modal-header-brand img {
+    width: 90px;
+  }
+
+  .register-course__modal-header-title h2 {
+    font-size: 16px;
+  }
+
+  .register-course__modal-body-title h3 {
+    font-size: 30px;
+  }
+
+  .register-course__modal-body-form input {
+    width: 320px;
+    height: 45px;
+    font-size: 12px;
+  }
+
+  .register-course__modal-btn {
+    margin: 30px 20px 50px;
+    padding: 22px 116px;
+    font-size: 9px;
+  }
+
+  .register-course__feedback {
+    margin-left: 20px;
+    font-size: 10px;
+  }
+
+  /* Accepted Info Modal */
+
+  .accepted-info__modal {
+    width: 360px;
+  }
+
+  .accepted-info__modal-body p {
+    padding: 30px 20px 20px;
+    font-size: 14px;
+  }
+
+  .accepted-info__modal-btn {
+    margin: 0px 123px 20px;
+    padding: 12px 35px;
+    font-size: 11px;
+  }
+
+  /* Subject Info Modal */
+
+  .subject-info__modal {
+    width: 460px;
+  }
+
+  .subject-info__modal-img img {
+    width: 360px;
+  }
+
+  /* Header Section */
+  .header-section__brand img {
+    width: 70px;
+  }
+
+  .header-section__brand h2 {
+    font-size: 20px;
+  }
+
+  /* Main Section */
+
+  .main-section__title h1 {
+    font-size: 45px;
+  }
+
+  .main-section__subtitle p {
+    width: 348px;
+  }
+
+  .main-section__btn button {
+    font-size: 14px;
+    padding: 20px 48px;
+  }
+
+  /* News Section */
+
+  .news-section__img img {
+    width: 380px;
+  }
+
+  .news-section__item-overlay {
+    width: 354px;
+    height: 171px;
+    top: 38px;
+    left: 0;
+  }
+
+  .news-section__item-overlay p {
+    top: 65px;
+    left: 85px;
+    font-size: 23px;
+  }
+
+  /* Courses Section */
+
+  .courses-section__item-wrapper > img,
+  .tutors-section__item-img img,
+  .annotation-section__item-img img {
+    width: 358px;
+  }
+
+  .courses-section__item-overlay {
+    width: 358px;
+    height: 173px;
+  }
+
+  .courses-section__item-overlay p {
+    top: 65px;
+    left: 85px;
+    font-size: 23px;
+  }
+
+  .courses-section__btn button {
+    padding: 16px 92px;
+  }
+
+  /* Photos Section */
+
+  .photos-section__item-img img {
+    width: 411px;
+  }
+
+  /* Videos Section */
+
+  .videos-section__item iframe {
+    width: 354px;
+    height: 190px;
+  }
+
+  /* Contact Section */
+
+  .contact-section__form input {
+    width: 370px;
+  }
+
+  .contact-section__form:after {
+    width: 386px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main-section__subtitle p {
+    width: 334px;
+  }
+
+  .news-section__img img {
+    width: 370px;
+  }
+
+  .news-section__item-overlay {
+    width: 344px;
+    height: 166px;
+  }
+
+  .courses-section__item-wrapper > img,
+  .tutors-section__item-img img,
+  .annotation-section__item-img img {
+    width: 334px;
+  }
+
+  .photos-section__item-img img {
+    width: 392px;
+  }
+
+  .videos-section__item iframe {
+    width: 344px;
+  }
+
+  .contact-section__form input {
+    width: 348px;
+  }
+
+  .contact-section__form:after {
+    width: 358px;
+  }
+
+}
+
+@media only screen and (max-width: 376px) {
+  .register-course__modal {
+    width: 400px;
+  }
+
+  .register-course__modal-header-brand img {
+    width: 90px;
+  }
+
+  .register-course__modal-header-title h2 {
+    font-size: 16px;
+  }
+
+  .register-course__modal-body-title h3 {
+    font-size: 30px;
+  }
+
+  .register-course__modal-body-form input {
+    width: 260px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .register-course__modal-btn {
+    margin: 30px 20px 50px;
+    padding: 16px 86px;
+    font-size: 9px;
+  }
+
+  .register-course__feedback {
+    margin-left: 20px;
+    font-size: 10px;
+  }
+
+  /* Accepted Info Modal */
+
+  .accepted-info__modal {
+    width: 280px;
+  }
+
+  .accepted-info__modal-body p {
+    padding: 30px 20px 20px;
+    font-size: 11px;
+  }
+
+  .accepted-info__modal-btn {
+    margin: 0px 87px 20px;
+    padding: 10px 35px;
+    font-size: 9px;
+  }
+
+  /* Subject Info Modal */
+
+  .subject-info__modal {
+    width: 400px;
+  }
+
+  .subject-info__modal-img img {
+    width: 300px;
+  }
+
+  /* Header Section */
+  .header-section__brand img {
+    width: 70px;
+  }
+
+  .header-section__brand h2 {
+    font-size: 20px;
+  }
+
+  /* Main Section */
+
+  .main-section__title h1 {
+    font-size: 37px;
+  }
+
+  .main-section__subtitle p {
+    width: 310px;
+  }
+
+  
+
+  /* News Section */
+
+  .news-section__img img {
+    width: 340px;
+  }
+
+  .news-section__item-overlay {
+    width: 315px;
+    height: 153px;
+  }
+
+  .news-section__item-overlay p {
+    top: 55px;
+    left: 72px;
+    font-size: 22px;
+  }
+
+  /* Courses Section */
+
+  .courses-section__item-wrapper > img,
+  .tutors-section__item-img img,
+  .annotation-section__item-img img {
+    width: 320px;
+  }
+
+  .courses-section__item-overlay {
+    width: 320px;
+    height: 154px;
+  }
+
+  .courses-section__item-overlay p {
+    top: 55px;
+    left: 72px;
+    font-size: 22px;
+  }
+
+  .courses-section__btn button {
+    padding: 16px 80px;
+  }
+
+  /* Photos Section */
+
+  .photos-section__item-img img {
+    width: 376px;
+  }
+
+  /* Videos Section */
+
+  .videos-section__item iframe {
+    width: 320px;
+    height: 170px;
+  }
+
+  /* Contact Section */
+
+  .contact-section__form input {
+    width: 336px;
+  }
+
+  .contact-section__form:after {
+    width: 352px;
+  }
+}
+
+@media only screen and (max-width: 361px){
+
+  .main-section__subtitle p {
+    width: 296px;
+  }
+
+  .courses-section__item-wrapper > img,
+  .tutors-section__item-img img,
+  .annotation-section__item-img img {
+    width: 304px;
+  }
+
+  .courses-section__item-overlay {
+    width: 304px;
+    height: 148px;
+  }
+
+  .courses-section__btn button {
+    padding: 16px 70px;
+  }
+
+  .photos-section__item-img img {
+    width: 360px;
+  }
+
+  .contact-section__form input {
+    width: 320px;
+  }
+
+  .contact-section__form:after {
+    width: 336px;
+  }
+
+  
+}
+
+@media only screen and (max-width: 345px){
+
+  .news-section__img img {
+    width: 324px;
+  }
+
+  .news-section__item-overlay {
+    width: 298px;
+    height: 146px;
+    top: 38px;
+    left: 0;
+  }
+
+  .news-section__item-overlay p {
+    top: 58px;
+    left: 88px;
+
+  }
+
+  .courses-section__item-wrapper > img,
+  .tutors-section__item-img img,
+  .annotation-section__item-img img {
+    width: 288px;
+  }
+
+  .courses-section__item-overlay {
+    width: 288px;
+    height: 140px;
+  }
+
+  .courses-section__btn button {
+    padding: 18px 62px;
+  }
+
+  .photos-section__item-img img {
+    width: 345px;
+  }
+
+  .videos-section__item iframe {
+    width: 290px;
+  }
+
+  .contact-section__form input {
+    width: 300px;
+  }
+
+  .contact-section__form:after {
+    width: 310px;
+  }
+
+}
+
+@media only screen and (max-width: 320px) {
+  /* Register Course Modal */
+
+  .register-course__modal {
+    width: 360px;
+  }
+
+  .register-course__modal-header-close {
+    top: -5px;
+    right: 5px;
+    font-size: 23px;
+  }
+
+  .register-course__feedback {
+    margin-left: 20px;
+    font-size: 10px;
+  }
+
+  .register-course__modal-body-form input {
+    margin: 15px 20px 0;
+    width: 220px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .register-course__modal-btn {
+    padding: 16px 66px;
+    /* font-size: 7px; */
+  }
+
+  /* Accepted Info Modal */
+
+  .accepted-info__modal {
+    width: 260px;
+  }
+
+  .accepted-info__modal-btn {
+    margin: 0 78px 20px;
+  }
+
+  /* Subject Info */
+
+  .subject-info__modal {
+    width: 360px;
+  }
+
+  .subject-info__modal-img img {
+    width: 260px;
+  }
+
+  /* Main Section */
+
+ 
+  .main-section__subtitle p {
+    width: 256px;
+  }
+
+ 
+
+  /* News Section */
+
+  .news-section__img img {
+    width: 290px;
+  }
+
+  .news-section__item-overlay {
+    width: 270px;
+    height: 132px;
+    top: 36px;
+    left: -3px;
+  }
+
+  .news-section__item-overlay p {
+    top: 50px;
+    left: 65px;
+    font-size: 17px;
+  }
+
+  /* Courses Section */
+
+  .courses-section__item-wrapper > img,
+  .tutors-section__item-img img,
+  .annotation-section__item-img img {
+    width: 264px;
+  }
+
+  .courses-section__item-overlay {
+    width: 264px;
+    height: 128px;
+  }
+
+  .courses-section__item-overlay p {
+    top: 50px;
+    left: 65px;
+    font-size: 17px;
+  }
+
+  .courses-section__btn button {
+    padding: 16px 50px;
+  }
+
+  /* Photos Section */
+
+  .photos-section__item-img img {
+    width: 320px;
+  }
+
+  /* Videos Section */
+
+  .videos-section__item iframe {
+    width: 264px;
+    height: 160px;
+  }
+
+  /* Our Section */
+
+  .our-section__map iframe {
+    height: 200px;
+  }
+
+  .our-section__item-socials i {
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+
+  .our-section__item-socials {
+    margin-left: 14px;
+  }
+
+  /* Contact Section */
+
+  .contact-section__form input {
+    width: 280px;
+  }
+
+  .contact-section__form:after {
+    top: 400px;
+    left: 0;
+    width: 296px;
+  }
+
+  
+
+  /* Footer Section */
+}
+
+@media only screen and (max-width: 280px) {
+  /* Register Course Modal */
+
+  
+  .register-course__modal-btn {
+    margin: 30px 23px 50px;
+    padding: 16px 62px;
+  }
+
+  /* Accepted Info Modal */
+
+  .accepted-info__modal-btn {
+    margin: 0 78px 20px;
+  }
+
+
+  /* Main Section */
+
+  .main-section__title h1 {
+    font-size: 36px;
+  }
+
+  .main-section__subtitle p {
+    width: 220px;
+    font-size: 18px;
+  }
+
+  .main-section__btn button {
+    font-size: 14px;
+    padding: 20px 48px;
+  }
+
+  /* News Section */
+
+  .news-section__img img {
+    width: 258px;
+  }
+
+  .news-section__item-overlay {
+    width: 239px;
+    height: 115px;
+    top: 36px;
+    left: -3px;
+  }
+
+  .news-section__item-overlay p {
+    top: 40px;
+    left: 52px;
+    font-size: 17px;
+  }
+
+  /* Courses Section */
+
+  .courses-section__item-wrapper > img,
+  .tutors-section__item-img img,
+  .annotation-section__item-img img {
+    width: 224px;
+  }
+
+  .courses-section__item-overlay {
+    width: 224px;
+    height: 107px;
+  }
+
+  .courses-section__item-overlay p {
+    top: 40px;
+    left: 40px;
+    font-size: 17px;
+  }
+
+  .courses-section__btn button {
+    padding: 14px 36px;
+  }
+
+  /* Photos Section */
+
+  .photos-section__item-img img {
+    width: 280px;
+  }
+
+  /* Videos Section */
+
+  .videos-section__item iframe {
+    width: 230px;
+    height: 150px;
+  }
+
+
+  /* Contact Section */
+
+  .contact-section__form input {
+    width: 240px;
+  }
+
+  .contact-section__form:after {
+    top: 400px;
+    left: 0;
+    width: 256px;
+  }
+
+  
+}

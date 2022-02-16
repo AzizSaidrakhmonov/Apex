@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links  -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/menu.css">
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <!-- /Bootstrap Css -->
+
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- /Links  -->
+
+    <title>Apex Ta'lim</title>
+</head>
+
+<body>
+
+    <div class="up">
+        <a href="#header-section">&uparrow;</a>
+    </div>
+
+    <!-- MODALS -->
+    <div class="register-course__modal-wrapper">
+        <div>
+            <div class="register-course__modal">
+                <div class="register-course__modal-header">
+                    <div class="register-course__modal-header-brand">
+                        <img src="./images/White Logo.png" alt="Logo">
+                    </div>
+                    <div class="register-course__modal-header-title">
+                        <h2>
+                            APEX TA'LIM
+                        </h2>
+                    </div>
+                    <div class="register-course__modal-header-close">
+                        &times;
+                    </div>
+                </div>
+                <div class="register-course__modal-body">
+                    <div class="register-course__modal-body-title">
+                        <h3>
+                            Kursga yozilish
+                        </h3>
+                    </div>
+                    <div class="register-course__modal-body-form">
+                        <form class="needs-validation" novalidate>
+                            <div>
+                                <input type="text" class="form-control" id="name" name="name"
+                                    placeholder="Ism va Familyangizni kiriting" value="" required="">
+                                <div class="valid-feedback register-course__feedback">
+                                    To'g'ri kiritilgan
+                                </div>
+                                <div class="invalid-feedback register-course__feedback">
+                                    Ism va Familyangizni kiriting
+                                </div>
+                            </div>
+                            <div>
+                                <input type="tel" class="form-control" id="phone" name="phone"
+                                    placeholder="Telefon Raqamingizni kiriting " value="" required="">
+                                <div class="valid-feedback register-course__feedback">
+                                    To'g'ri kiritilgan
+                                </div>
+                                <div class="invalid-feedback register-course__feedback">
+                                    Telefon raqamingizni kiriting
+                                </div>
+                            </div>
+                            <div>
+                                <button class="register-course__modal-btn" id="show2">KURSGA YOZILISH</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accepted-info__modal-wrapper">
+        <div class="accepted-info">
+            <div class="accepted-info__modal">
+                <div class="accepted-info__modal-header">
+                </div>
+                <div class="accepted-info__modal-body">
+                    <div class="accepted-info__modal-text">
+                        <p>
+                            Ma’lumotlaringiz qabul qilindi. Tez orada <br> menedjerlarimiz siz bilan aloqaga chiqishadi.
+                        </p>
+                    </div>
+                    <button class="accepted-info__modal-btn">YOPISH</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subject-info__modal-wrapper">
+        <div>
+            <div class="subject-info__modal">
+                <div class="subject-info__modal-header">
+                    <p class="subject-info__modal-header-close">
+                        &times;
+                    </p>
+                </div>
+                <div class="subject-info__modal-body">
+                    <div class="subject-info__modal-item">
+                        <div class="subject-info__modal-img">
+                            <img src="./images/News Section Img1.png" alt="Img1">
+                        </div>
+                        <div class="subject-info__modal-subtitle">
+                            <h3>
+                                Mental arifmetikani oson o‘rganamiz
+                            </h3>
+                        </div>
+                        <div class="subject-info__modal-date">
+                            <h4>
+                                22.09.2021
+                            </h4>
+                        </div>
+
+                        <div class="subject-info__modal-text">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptates, libero inventore
+                                quod adipisci iusto modi repellendus voluptatibus illum impedit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="subject-info__modal-item">
+                        <div class="subject-info__modal-title">
+                            <h4>
+                                Description
+                            </h4>
+                        </div>
+                        <div class="subject-info__modal-info">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit nemo maxime amet
+                                est odio, ea tempore nobis voluptatem necessitatibus sapiente consectetur molestiae
+                                totam quam quas ad voluptatibus quaerat sit? Deleniti accusamus officiis nam. Totam, nam
+                                a repellat ipsa odit ullam alias culpa mollitia facere aperiam possimus tempore incidunt
+                                sint consequatur impedit porro cupiditate. Neque esse magnam quisquam rem recusandae!
+                                Iste!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /MODALS -->
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="container">
+            <div class="header-section" id="header-section">
+                <div class="header-section__brand">
+                    <img src="./images/Header Section Logo.png" alt="Apex Logo">
+                    <h2>APEX TA'LIM</h2>
+                </div>
+                <div class="header-section__nav">
+                    <ul class="header-section__nav-items">
+                        <a href="#news-section">
+                            <li class="header-section__nav-item">Yangiliklar</li>
+                        </a>
+                        <a href="#courses-section">
+                            <li class="header-section__nav-item">Kurslar</li>
+                        </a>
+                        <a href="#tutors-section">
+                            <li class="header-section__nav-item">Ustozlar</li>
+                        </a>
+                        <a href="#photos-section">
+                            <li class="header-section__nav-item">Fotolavhalar</li>
+                        </a>
+                        <a href="#videos-section">
+                            <li class="header-section__nav-item">Videolavhalar</li>
+                        </a>
+                        <a href="#results-section">
+                            <li class="header-section__nav-item">Natijalar</li>
+                        </a>
+                        <a href="#annotation-section">
+                            <li class="header-section__nav-item">Izohlar</li>
+                        </a>
+                        <a href="#footer-section">
+                            <li class="header-section__nav-item">Aloqa</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="#news-section">Yangiliklar</a></li>
+                        <li><a class="menu__item" href="#courses-section">Kurslar</a></li>
+                        <li><a class="menu__item" href="#tutors-section">Ustozlar</a></li>
+                        <li><a class="menu__item" href="#photos-section">Fotolavhalar</a></li>
+                        <li><a class="menu__item" href="#videos-section">Videolavhalar</a></li>
+                        <li><a class="menu__item" href="#results-section">Natijalar</a></li>
+                        <li><a class="menu__item" href="#annotation-section">Izohlar</a></li>
+                        <li><a class="menu__item" href="#footer-section">Aloqa</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /Header Section -->
+
+    <!-- Main Section -->
+    <div class="main">
+        <div class="container">
+            <div class="main-section row" id="main-section">
+                <div class="main-section__item col-lg-7 col-12">
+                    <div class="main-section__title">
+                        <h1>Talaba bo‘lishingizga albatta ishonamiz</h1>
+                    </div>
+                    <div class="main-section__subtitle">
+                        <p>
+                            Shaxmatda yo‘lga chiqqan piyoda, bir kun kelib albatta vazir bo’ladi.
+                        </p>
+                    </div>
+                    <div class="main-section__btn">
+                        <button class="show" type="button" id="show">
+                            Kursga Yozilish
+                        </button>
+                    </div>
+
+                </div>
+                <div class="main-section__item col-lg-5 item-2">
+                    <img src="./images/Main Section Img.png" alt="Person Img">
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- /Main Section -->
+
+    <!-- News Section -->
+    <div class="news">
+        <div class="container">
+            <div class="news-section" id="news-section">
+                <div class="news-section__title">
+                    <h2>
+                        Yangiliklar
+                    </h2>
+                </div>
+                <div class="news-section__items">
+                    <div class="news-section__item">
+                        <div class="news-section__item-wrapper" id="show-subject-info__modal">
+                            <div class="news-section__img">
+                                <img src="./images/News Section Img1.png" alt="Img1">
+                            </div>
+
+                            <div class="news-section__item-overlay">
+                                <p>
+                                    Batafsil [+]
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="news-section__subtitle">
+                            <h4>
+                                Mental arifmetikani oson o‘rganamiz
+                            </h4>
+                        </div>
+                        <div class="news-section__date">
+                            <p>
+                                22.09.2021
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news-section__item">
+                        <div class="news-section__item-wrapper" id="show-subject-info__modal2">
+                            <div class="news-section__img">
+                                <img src="./images/News Section Img 2.png" alt="Img2">
+                            </div>
+
+                            <div class="news-section__item-overlay">
+                                <p>
+                                    Batafsil [+]
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="news-section__subtitle">
+                            <h4>
+                                Mental arifmetikani oson o‘rganamiz
+                            </h4>
+                        </div>
+                        <div class="news-section__date">
+                            <p>
+                                22.09.2021
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news-section__item">
+                        <div class="news-section__item-wrapper" id="show-subject-info__modal3">
+                            <div class="news-section__img">
+                                <img src="./images/News Section Img 3.png" alt="Img3">
+                            </div>
+
+                            <div class="news-section__item-overlay">
+                                <p>
+                                    Batafsil [+]
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="news-section__subtitle">
+                            <h4>
+                                Mental arifmetikani oson o‘rganamiz
+                            </h4>
+                        </div>
+                        <div class="news-section__date">
+                            <p>
+                                22.09.2021
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="news-section__item">
+                        <div class="news-section__item-wrapper" id="show-subject-info__modal4">
+                            <div class="news-section__img">
+                                <img src="./images/News Section Img1.png" alt="Img1">
+                            </div>
+
+                            <div class="news-section__item-overlay">
+                                <p>
+                                    Batafsil [+]
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="news-section__subtitle">
+                            <h4>
+                                Mental arifmetikani oson o‘rganamiz
+                            </h4>
+                        </div>
+                        <div class="news-section__date">
+                            <p>
+                                22.09.2021
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news-section__item">
+                        <div class="news-section__item-wrapper" id="show-subject-info__modal5">
+                            <div class="news-section__img">
+                                <img src="./images/News Section Img 2.png" alt="Img2">
+                            </div>
+
+                            <div class="news-section__item-overlay">
+                                <p>
+                                    Batafsil [+]
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="news-section__subtitle">
+                            <h4>
+                                Mental arifmetikani oson o‘rganamiz
+                            </h4>
+                        </div>
+                        <div class="news-section__date">
+                            <p>
+                                22.09.2021
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news-section__item">
+                        <div class="news-section__item-wrapper" id="show-subject-info__modal6">
+                            <div class="news-section__img">
+                                <img src="./images/News Section Img 3.png" alt="Img3">
+                            </div>
+
+                            <div class="news-section__item-overlay">
+                                <p>
+                                    Batafsil [+]
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="news-section__subtitle">
+                            <h4>
+                                Mental arifmetikani oson o‘rganamiz
+                            </h4>
+                        </div>
+                        <div class="news-section__date">
+                            <p>
+                                22.09.2021
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /News Section -->
+
+    <!-- Courses Section -->
+    <div class="courses">
+        <div class="container">
+            <div class="courses-section" id="courses-section">
+
+                <div class="courses-section__title">
+                    <h2>
+                        Kurslar
+                    </h2>
+                </div>
+
+                <div class="courses-section__items">
+
+                    <div class="courses-section__item card">
+                        <div class="courses-section__item-wrapper">
+                            <img src="./images/Courses 1 .png" alt="Img 1">
+
+                            <div class="courses-section__item-overlay">
+                                <p>
+                                    Batafsil [+]
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card-body courses-section__card-body">
+
+                            <div class="courses-section__title">
+                                <h5>
+                                    Matematika
+                                </h5>
+                            </div>
+
+                            <div class="courses-section__text">
+                                <p>
+                                    Matematika fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.
+                                </p>
+                            </div>
+
+                            <div class="courses-section__btn">
+                                <button type="button" id="show-Register-Course1">
+                                    Kursga Yozilish
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="courses-section__item card">
+                        <div class="courses-section__item-wrapper">
+                            <img src="./images/Courses 2.png" alt="Img2">
+
+                            <div class="courses-section__item-overlay">
+                                <p>
+                                    Batafsil [+]
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card-body courses-section__card-body">
+
+                            <div class="courses-section__title">
+                                <h5>
+                                    Matematika
+                                </h5>
+                            </div>
+
+                            <div class="courses-section__text">
+                                <p>
+                                    Matematika fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.
+                                </p>
+                            </div>
+
+                            <div class="courses-section__btn">
+                                <button type="button" id="show-Register-Course2">
+                                    Kursga Yozilish
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="courses-section__item card">
+                        <div class="courses-section__item-wrapper">
+                            <img src="./images/Courses 3 .png" alt="Img3">
+
+                            <div class="courses-section__item-overlay">
+                                <p>
+                                    Batafsil [+]
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card-body courses-section__card-body">
+
+                            <div class="courses-section__title">
+                                <h5>
+                                    Matematika
+                                </h5>
+                            </div>
+
+                            <div class="courses-section__text">
+                                <p>
+                                    Matematika fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.
+                                </p>
+                            </div>
+
+                            <div class="courses-section__btn">
+                                <button type="button" id="show-Register-Course3">
+                                    Kursga Yozilish
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="courses-section__item card">
+                        <div class="courses-section__item-wrapper">
+                            <img src="./images/Courses 1 .png" alt="Img 1">
+
+                            <div class="courses-section__item-overlay">
+                                <p>
+                                    Batafsil [+]
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card-body courses-section__card-body">
+
+                            <div class="courses-section__title">
+                                <h5>
+                                    Matematika
+                                </h5>
+                            </div>
+
+                            <div class="courses-section__text">
+                                <p>
+                                    Matematika fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.
+                                </p>
+                            </div>
+
+                            <div class="courses-section__btn">
+                                <button type="button" id="show-Register-Course4">
+                                    Kursga Yozilish
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="courses-section__item card">
+                        <div class="courses-section__item-wrapper">
+                            <img src="./images/Courses 2.png" alt="Img2">
+
+                            <div class="courses-section__item-overlay">
+                                <p>
+                                    Batafsil [+]
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card-body courses-section__card-body">
+
+                            <div class="courses-section__title">
+                                <h5>
+                                    Matematika
+                                </h5>
+                            </div>
+
+                            <div class="courses-section__text">
+                                <p>
+                                    Matematika fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.
+                                </p>
+                            </div>
+
+                            <div class="courses-section__btn">
+                                <button type="button" id="show-Register-Course5">
+                                    Kursga Yozilish
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="courses-section__item card">
+                        <div class="courses-section__item-wrapper">
+                            <img src="./images/Courses 3 .png" alt="Img3">
+
+                            <div class="courses-section__item-overlay">
+                                <p>
+                                    Batafsil [+]
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card-body courses-section__card-body">
+
+                            <div class="courses-section__title">
+                                <h5>
+                                    Matematika
+                                </h5>
+                            </div>
+
+                            <div class="courses-section__text">
+                                <p>
+                                    Matematika fanini mukammal o‘rganish yangi metodikasi bilan o‘rganamiz.
+                                </p>
+                            </div>
+
+                            <div class="courses-section__btn">
+                                <button type="button" id="show-Register-Course6">
+                                    Kursga Yozilish
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Courses Section -->
+
+    <!-- Tutors Section -->
+    <div class="tutors">
+        <div class="container">
+            <div class="tutors-section" id="tutors-section">
+                <div class="tutors-section__title">
+                    <h2>
+                        Ustozlar
+                    </h2>
+                </div>
+                <div class="tutors-section__items">
+                    <div class="tutors-section__item card">
+                        <div class="tutors-section__item-img">
+                            <img src="./images/Teachar 2.png" alt="Img1">
+                        </div>
+                        <div class="tutors-section__card-body">
+                            <div class="tutors-section__item-title">
+                                <h5>
+                                    Asadov Qodir
+                                </h5>
+                            </div>
+                            <div class="tutors-section__item-text">
+                                <p>
+                                    Matematika fani o‘qituvchisi
+                                    <br><br>
+                                    Ish tajribasi: 8 yil
+                                    <br><br>
+                                    O‘qitgan talabalari soni: 500+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tutors-section__item card">
+                        <div class="tutors-section__item-img">
+                            <img src="./images/Teacher 1.png" alt="Img 2">
+                        </div>
+                        <div class="tutors-section__card-body">
+                            <div class="tutors-section__item-title">
+                                <h5>
+                                    Ergashev Jasur
+                                </h5>
+                            </div>
+                            <div class="tutors-section__item-text">
+                                <p>
+                                    Fizika fani o‘qituvchisi
+                                    <br><br>
+                                    Ish tajribasi: 5 yil
+                                    <br><br>
+                                    O‘qitgan talabalari soni: 400+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tutors-section__item card">
+                        <div class="tutors-section__item-img">
+                            <img src="./images/Teacher 3.png" alt="Img 3">
+                        </div>
+                        <div class="tutors-section__card-body">
+                            <div class="tutors-section__item-title">
+                                <h5>
+                                    Murodov Alibek
+                                </h5>
+                            </div>
+                            <div class="tutors-section__item-text">
+                                <p>
+                                    Ingliz tili fani o‘qituvchisi
+                                    <br><br>
+                                    Ish tajribasi: 4 yil
+                                    <br><br>
+                                    O‘qitgan talabalari soni: 300+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tutors-section__item card">
+                        <div class="tutors-section__item-img">
+                            <img src="./images/Teachar 2.png" alt="Img1">
+                        </div>
+                        <div class="tutors-section__card-body">
+                            <div class="tutors-section__item-title">
+                                <h5>
+                                    Asadov Qodir
+                                </h5>
+                            </div>
+                            <div class="tutors-section__item-text">
+                                <p>
+                                    Matematika fani o‘qituvchisi
+                                    <br><br>
+                                    Ish tajribasi: 8 yil
+                                    <br><br>
+                                    O‘qitgan talabalari soni: 500+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tutors-section__item card">
+                        <div class="tutors-section__item-img">
+                            <img src="./images/Teacher 1.png" alt="Img 2">
+                        </div>
+                        <div class="tutors-section__card-body">
+                            <div class="tutors-section__item-title">
+                                <h5>
+                                    Ergashev Jasur
+                                </h5>
+                            </div>
+                            <div class="tutors-section__item-text">
+                                <p>
+                                    Fizika fani o‘qituvchisi
+                                    <br><br>
+                                    Ish tajribasi: 5 yil
+                                    <br><br>
+                                    O‘qitgan talabalari soni: 400+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tutors-section__item card">
+                        <div class="tutors-section__item-img">
+                            <img src="./images/Teacher 3.png" alt="Img 3">
+                        </div>
+                        <div class="tutors-section__card-body">
+                            <div class="tutors-section__item-title">
+                                <h5>
+                                    Murodov Alibek
+                                </h5>
+                            </div>
+                            <div class="tutors-section__item-text">
+                                <p>
+                                    Ingliz tili fani o‘qituvchisi
+                                    <br><br>
+                                    Ish tajribasi: 4 yil
+                                    <br><br>
+                                    O‘qitgan talabalari soni: 300+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Tutors Section -->
+
+    <!-- Photos Section -->
+    <div class="photos">
+        <div class="container">
+            <div class="photos-section" id="photos-section">
+
+                <div class="photos-section__title">
+                    <h2>
+                        Darslardan fotolavhalar
+                    </h2>
+                </div>
+                <div class="photos-section__items">
+
+                    <div class="photos-section__item row gx-4">
+
+                        <div class="photos-section__item-img col-md-4 col-12">
+                            <img src="./images/Rectangle 12.png" alt="Img1">
+                        </div>
+                        <div class="photos-section__item-img col-md-4 col-12">
+                            <img src="./images/Rectangle 12 (1).png" alt="img2">
+                        </div>
+                        <div class="photos-section__item-img col-md-4 col-12">
+                            <img src="./images/Rectangle 12 (2).png" alt="Img3">
+                        </div>
+
+                    </div>
+                    <div class="photos-section__item row gx-4">
+
+                        <div class="photos-section__item-img col-md-4 col-12">
+                            <img src="./images/Rectangle 12 (3).png" alt="img4">
+                        </div>
+                        <div class="photos-section__item-img col-md-4 col-12">
+                            <img src="./images/Rectangle 12 (4).png" alt="Img5">
+                        </div>
+                        <div class="photos-section__item-img col-md-4 col-12">
+                            <img src="./images/Rectangle 12 (5).png" alt="Img6">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Photos Section -->
+
+    <!-- Videos Section -->
+    <div class="videos">
+        <div class="container">
+            <div class="videos-section" id="videos-section">
+                <div class="videos-section__title">
+                    <h2>
+                        Darslardan videolavhalar
+                    </h2>
+                </div>
+                <div class="videos-section__items">
+                    <div class="videos-section__item">
+                        <iframe src="./videos/videoplayback (1).mp4" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="videos-section__item">
+                        <iframe src="./videos/videoplayback (1).mp4" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="videos-section__item">
+                        <iframe src="./videos/videoplayback (1).mp4" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <div class="videos-section__item">
+                        <iframe src="./videos/videoplayback (1).mp4" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="videos-section__item">
+                        <iframe src="./videos/videoplayback (1).mp4" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="videos-section__item">
+                        <iframe src="./videos/videoplayback (1).mp4" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Videos Section -->
+
+    <!-- Results Section -->
+    <div class="results">
+        <div class="container">
+            <div class="results-section" id="results-section">
+                <div class="results-section__title">
+                    <h2>
+                        O’quvchilarimiz natijalari
+                    </h2>
+                </div>
+                <div class="results-section__items">
+                    <div class="results-section__item">
+                        <div class="results-section__item-img">
+                            <img src="./images/Ellipse 3.png" alt="Person1">
+                        </div>
+                        <div class="results-section__item-info">
+                            <h4>
+                                Norboyeva Nodira
+                            </h4>
+                            <p>
+                                O‘qishga kirgan oliygoh nomi:
+                                <br>
+                                Toshkent Davlat Milliy Universiteti
+                                <br><br>
+                                Abiturientlik davri: 6 oylik tayyorlov kursi
+                            </p>
+                        </div>
+                    </div>
+                    <div class="results-section__item">
+                        <div class="results-section__item-img">
+                            <img src="./images/Ellipse 3 (1).png" alt="Person2">
+                        </div>
+                        <div class="results-section__item-info">
+                            <h4>
+                                Mavlonov Abdulla
+                            </h4>
+                            <p>
+                                O‘qishga kirgan oliygoh nomi:
+                                <br>
+                                Toshkent Davlat Yuridik Universiteti
+                                <br><br>
+                                Abiturientlik davri: 8 oylik tayyorlov kursi
+                            </p>
+                        </div>
+                    </div>
+                    <div class="results-section__item">
+                        <div class="results-section__item-img">
+                            <img src="./images/Ellipse 3 (2).png" alt="Person3">
+                        </div>
+                        <div class="results-section__item-info">
+                            <h4>
+                                Yo'lchiyeva Madina
+                            </h4>
+                            <p>
+                                O‘qishga kirgan oliygoh nomi:
+                                <br>
+                                Toshkent Davlat Nizomiy Universiteti
+                                <br><br>
+                                Abiturientlik davri: 5 oylik tayyorlov kursi
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="results-section__item">
+                        <div class="results-section__item-img">
+                            <img src="./images/Ellipse 3.png" alt="Person1">
+                        </div>
+                        <div class="results-section__item-info">
+                            <h4>
+                                Norboyeva Nodira
+                            </h4>
+                            <p>
+                                O‘qishga kirgan oliygoh nomi:
+                                <br>
+                                Toshkent Davlat Milliy Universiteti
+                                <br><br>
+                                Abiturientlik davri: 6 oylik tayyorlov kursi
+                            </p>
+                        </div>
+                    </div>
+                    <div class="results-section__item">
+                        <div class="results-section__item-img">
+                            <img src="./images/Ellipse 3 (1).png" alt="Person2">
+                        </div>
+                        <div class="results-section__item-info">
+                            <h4>
+                                Mavlonov Abdulla
+                            </h4>
+                            <p>
+                                O‘qishga kirgan oliygoh nomi:
+                                <br>
+                                Toshkent Davlat Yuridik Universiteti
+                                <br><br>
+                                Abiturientlik davri: 8 oylik tayyorlov kursi
+                            </p>
+                        </div>
+                    </div>
+                    <div class="results-section__item">
+                        <div class="results-section__item-img">
+                            <img src="./images/Ellipse 3 (2).png" alt="Person3">
+                        </div>
+                        <div class="results-section__item-info">
+                            <h4>
+                                Yo'lchiyeva Madina
+                            </h4>
+                            <p>
+                                O‘qishga kirgan oliygoh nomi:
+                                <br>
+                                Toshkent Davlat Nizomiy Universiteti
+                                <br><br>
+                                Abiturientlik davri: 5 oylik tayyorlov kursi
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Results Section -->
+
+    <!-- Annotation Section -->
+    <div class="annotation">
+        <div class="container">
+            <div class="annotation-section" id="annotation-section">
+                <div class="annotation-section__title">
+                    <h2>
+                        Mijozlarimiz izohlari
+                    </h2>
+                </div>
+                <div class="annotation-section__items">
+                    <div class="annotation-section__item card">
+                        <div class="annotation-section__item-img">
+                            <img src="./images/client 1.png" alt="Img1">
+                        </div>
+                        <div class="annotation-section__card-body">
+                            <div class="annotation-section__item-title">
+                                <h5>
+                                    Karimova odina
+                                </h5>
+                            </div>
+                            <div class="annotation-section__item-subtitle">
+                                <p>
+                                    TDMI 1-kurs talabasi
+                                </p>
+                            </div>
+
+                            <div class="annotation-section__item-text">
+                                <p>
+                                    Men talaba bo’lishimga sababchi bo‘lgan eng zo‘r o‘quv markaz.
+                                </p>
+                            </div>
+
+                            <div class="annotation-section__item-rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="annotation-section__item card">
+                        <div class="annotation-section__item-img">
+                            <img src="./images/client 2.png" alt="Img2">
+                        </div>
+                        <div class="annotation-section__card-body">
+                            <div class="annotation-section__item-title">
+                                <h5>
+                                    Azizova Durdona
+                                </h5>
+                            </div>
+                            <div class="annotation-section__item-subtitle">
+                                <p>
+                                    TATU 1-kurs talasi
+                                </p>
+                            </div>
+
+                            <div class="annotation-section__item-text">
+                                <p>
+                                    Zamonaviy kasblarni o’rganish uchun qulay o’quv markaz deya tavsiya qilaman
+                                </p>
+                            </div>
+
+                            <div class="annotation-section__item-rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="annotation-section__item card">
+                        <div class="annotation-section__item-img">
+                            <img src="./images/client 3.png" alt="Img3">
+                        </div>
+                        <div class="annotation-section__card-body">
+                            <div class="annotation-section__item-title">
+                                <h5>
+                                    Madrahimov Olimjon
+                                </h5>
+                            </div>
+                            <div class="annotation-section__item-subtitle">
+                                <p>
+                                    TDYU 1-kurs talabasi
+                                </p>
+                            </div>
+
+                            <div class="annotation-section__item-text">
+                                <p>
+                                    Eng tajribali ustozlar jamosiga ega o‘quv markaz sifatiad tavsiya qilaman.
+                                </p>
+                            </div>
+
+                            <div class="annotation-section__item-rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="annotation-section__item card">
+                        <div class="annotation-section__item-img">
+                            <img src="./images/client 1.png" alt="Img1">
+                        </div>
+                        <div class="annotation-section__card-body">
+                            <div class="annotation-section__item-title">
+                                <h5>
+                                    Karimova odina
+                                </h5>
+                            </div>
+                            <div class="annotation-section__item-subtitle">
+                                <p>
+                                    TDMI 1-kurs talabasi
+                                </p>
+                            </div>
+
+                            <div class="annotation-section__item-text">
+                                <p>
+                                    Men talaba bo’lishimga sababchi bo‘lgan eng zo‘r o‘quv markaz.
+                                </p>
+                            </div>
+
+                            <div class="annotation-section__item-rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="annotation-section__item card">
+                        <div class="annotation-section__item-img">
+                            <img src="./images/client 2.png" alt="Img2">
+                        </div>
+                        <div class="annotation-section__card-body">
+                            <div class="annotation-section__item-title">
+                                <h5>
+                                    Azizova Durdona
+                                </h5>
+                            </div>
+                            <div class="annotation-section__item-subtitle">
+                                <p>
+                                    TATU 1-kurs talasi
+                                </p>
+                            </div>
+
+                            <div class="annotation-section__item-text">
+                                <p>
+                                    Zamonaviy kasblarni o’rganish uchun qulay o’quv markaz deya tavsiya qilaman
+                                </p>
+                            </div>
+
+                            <div class="annotation-section__item-rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="annotation-section__item card">
+                        <div class="annotation-section__item-img">
+                            <img src="./images/client 3.png" alt="Img3">
+                        </div>
+                        <div class="annotation-section__card-body">
+                            <div class="annotation-section__item-title">
+                                <h5>
+                                    Madrahimov Olimjon
+                                </h5>
+                            </div>
+                            <div class="annotation-section__item-subtitle">
+                                <p>
+                                    TDYU 1-kurs talabasi
+                                </p>
+                            </div>
+
+                            <div class="annotation-section__item-text">
+                                <p>
+                                    Eng tajribali ustozlar jamosiga ega o‘quv markaz sifatiad tavsiya qilaman.
+                                </p>
+                            </div>
+
+                            <div class="annotation-section__item-rate">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Annotation Section -->
+
+    <!-- Our -->
+    <div class="our">
+        <div class="container">
+            <div class="our-section" id="our-section">
+                <div class="our-section__title">
+                    <h2>
+                        Biz bilan bog’lanish
+                    </h2>
+                </div>
+                <div class="our-section__map">
+                    <iframe class="col-12"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.5299549548185!2d69.28462621457233!3d41.34083347926843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b53692bdc5f%3A0x7574e9574743e06!2sUniversitet%20Informatsionnykh%20Tekhnologiy!5e0!3m2!1suz!2s!4v1637330177991!5m2!1suz!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="our-section__items">
+                    <div class="our-section__item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>
+                            Toshkent shahri, Yunusobod <br> tumani, Amir Temur Shox ko'chasi
+                        </p>
+                    </div>
+                    <div class="our-section__item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>
+                            +998 99 807 44 19
+                        </p>
+                    </div>
+                    <div class="our-section__item">
+                        <i class="fas fa-envelope"></i>
+                        <p>
+                            apexedu@gmail.com
+                        </p>
+                    </div>
+                    <div class="our-section__item">
+                        <p>
+                            Ijtimoiy tarmoqdagi sahifalarimiz
+                        </p>
+                        <div class="our-section__item-socials">
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-telegram-plane"></i>
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Our -->
+
+    <!-- Contact Section -->
+    <div class="contact">
+        <div class="container">
+            <div class="contact-section" id="contact-section">
+                <div class="contact-section__title">
+                    <h2>
+                        Aloqa
+                    </h2>
+                </div>
+                <form class="needs-validation contact-section__form" novalidate>
+                    <div>
+                        <input type="text" class="form-control" id="name" placeholder="Ism familyangizni kiriting"
+                            value="" required="">
+                        <div class="valid-feedback contact-section__feedback">
+                            To'g'ri kiritilgan
+                        </div>
+                        <div class="invalid-feedback contact-section__feedback">
+                            Iltimos ism familyangizni kiriting
+                        </div>
+                    </div>
+                    <div>
+                        <input type="tel" class="form-control" id="phone" placeholder="Telefon raqamingizni kiriting"
+                            value="" required="">
+                        <div class="valid-feedback contact-section__feedback">
+                            To'g'ri kiritilgan
+                        </div>
+                        <div class="invalid-feedback contact-section__feedback">
+                            Iltimos telefon raqamingizni kiriting
+                        </div>
+                    </div>
+                    <div>
+                        <input type="email" class="form-control" id="email" placeholder="Email manzilingizni kiriting"
+                            value="" required="">
+                        <div class="valid-feedback contact-section__feedback">
+                            To'g'ri kiritilgan
+                        </div>
+                        <div class="invalid-feedback contact-section__feedback">
+                            Iltimos email manzilingizni kiriting
+                        </div>
+                    </div>
+                    <div class="contact-section__form-btn">
+                        <button class="w-457px btn" type="submit" data-bs-target="#buttonModal2" data-bs-dismiss="modal"
+                            data-bs-toggle="modal">
+                            Yuborish
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /Contact Section -->
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-section" id="footer-section">
+                <div class="footer-section__item-1">
+                    <div class="footer-section__logo">
+                        <img src="./images/Header Section Logo.png" alt="Apex">
+                    </div>
+                    <div class="footer-section__title">
+                        <h3>
+                            Apex Ta'lim
+                        </h3>
+                        <p>
+                            Talaba bo‘lishingizga albatta ishonamiz
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-section__item-2">
+                    <p>
+                        ©2021. Apex ta’lim. Xizmatlar litsenziyalangan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Footer Section -->
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <!-- /Bootstrap JS -->
+
+    <script src="./js/jquery.js"></script>
+    <script src="./slick/slick.min.js" ></script>
+
+    <script src="./js/app.js"></script>
+    
+
+</body>
+
+</html>
